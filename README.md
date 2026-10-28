@@ -2,6 +2,13 @@
 
 Companion [project case study](https://netjoints.github.io/cisco-catc-mcp-server-deployment-guide/) and source: [index.html](index.html).
 
+## Related repositories
+
+This repository installs the server. After it is running on `http://127.0.0.1:7001/v1/mcp`, connect a client with one of these guides:
+
+- [Codex and ChatGPT setup](https://github.com/netJoints/cisco-catalystcenter-mcp-server-codex-setup) · [site](https://netjoints.github.io/cisco-catalystcenter-mcp-server-codex-setup/)
+- [Cursor setup](https://github.com/netJoints/cisco-catalystcenter-mcp-server-cursor-setup) · [site](https://netjoints.github.io/cisco-catalystcenter-mcp-server-cursor-setup/)
+
 ## Purpose
 
 This guide installs Cisco's [Catalyst Center MCP server](https://github.com/cisco-en-programmability/catc-mcp-oss) on macOS with Podman Desktop. It is written for Apple Silicon Macs and uses the server's Streamable HTTP endpoint. The same container commands work on Intel Macs, though Podman Desktop's provider and binary path can differ.
@@ -186,7 +193,12 @@ Configure your MCP client to use **Streamable HTTP** at:
 http://127.0.0.1:7001/v1/mcp
 ```
 
-Keep the URL on `127.0.0.1` for laptop-only access. The port is not published on other network interfaces. Client configuration formats differ; use the client's current instructions for adding a remote HTTP MCP server. After connecting, make a simple read-only inventory query and verify the result against Catalyst Center.
+Keep the URL on `127.0.0.1` for laptop-only access. The port is not published on other network interfaces. Client steps are in the related repositories:
+
+- [Codex and ChatGPT setup](https://github.com/netJoints/cisco-catalystcenter-mcp-server-codex-setup)
+- [Cursor setup](https://github.com/netJoints/cisco-catalystcenter-mcp-server-cursor-setup)
+
+After connecting, make a simple read-only inventory query and verify the result against Catalyst Center.
 
 ## Daily operations
 
@@ -219,6 +231,8 @@ Keep the URL on `127.0.0.1` for laptop-only access. The port is not published on
 
 ## References
 
+- [Codex and ChatGPT setup](https://github.com/netJoints/cisco-catalystcenter-mcp-server-codex-setup)
+- [Cursor setup](https://github.com/netJoints/cisco-catalystcenter-mcp-server-cursor-setup)
 - [Cisco Catalyst Center MCP server source](https://github.com/cisco-en-programmability/catc-mcp-oss)
 - [Podman Desktop installation](https://podman-desktop.io/docs/installation)
 - [Podman machine init reference](https://docs.podman.io/en/latest/markdown/podman-machine-init.1.html)
